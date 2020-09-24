@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bebas+Neue&display=swap');
+
+/* Body */ 
+
+body {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.showcase {
+    background-image: url('../media/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    color: white;
+    overflow: hidden;
+    
+}
+
+.Showcase-text {
+    z-index: 1;
+    text-align: center;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); /* right, down */
+    font-size: 25px;
+    font-family: ;
+}
+
+.Showcase-text h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.about {
+    min-height: 300px;
+    color: black;
+    overflow: hidden;
+}
