@@ -1,21 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bebas+Neue&family=Courgette&display=swap');
 /* Body */ 
 
 body {
     background-color: white;
     padding: 0px;
     margin: 0px;
+    font-family: Balsamiq Sans, 'Times New Roman', Times, serif;
 }
 
 .showcase {
-    background-image: url('../media/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
+    background-image: url('../media/chronis-yan-vaB-Xd0V2zc-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
     color: white;
     overflow: hidden;
     
+}
+
+.showcase ul{
+    list-style: none;
+    font-size: 22px;
+    margin:0;
+	padding:0;
+}
+
+.showcase li{
+
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+    background-color: crimson;
+    font-family: monospace;
+    text-align: center;
+    
+
 }
 
 .Showcase-text {
@@ -28,17 +47,47 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); /* right, down */
-    font-size: 25px;
-    font-family: ;
+    font-size: 35px;
+    font-family: Courgette;
+    
+    
 }
 
 .Showcase-text h1{
-    font-size: 45px;
-    font-weight: bold;
+    font-size: 55px;
+    filter: none;
+    font-family: Courgette;
+    background-color: crimson;
+    display: inline;
+    
+}
+
+.Showcase-text p{
+    background-color: crimson;
+    display: inline-block-block;
 }
 
 .about {
     min-height: 300px;
-    color: black;
+    color: white;
     overflow: hidden;
+    background-color: #c61236;
+
+}
+
+.about h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: Courgette;
+    z-index: 1;
+    background-color: white;
+    padding-top: -10%;
+    display: block-inline;
+    color:  #c61236;
+    
+}
+
+.about p{
+    font-size: 30px;
+    
 }
