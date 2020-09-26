@@ -5,7 +5,8 @@ body {
     background-color: white;
     padding: 0px;
     margin: 0px;
-    font-family: Balsamiq Sans, 'Times New Roman', Times, serif;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    
 }
 
 .showcase {
@@ -18,17 +19,16 @@ body {
     
 }
 
-.showcase ul{
+.navigation{
+    float: left;
     list-style: none;
-    font-size: 22px;
-    margin:0;
-	padding:0;
+    font-size: 20px;
+    margin-top: 15px;
+	padding:15px;
 }
 
-.showcase li{
+.navigation li{
 
-    float:left;
-    display:inline;
     padding: 0 20px 0 20px;
     background-color: crimson;
     font-family: monospace;
@@ -47,16 +47,16 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); /* right, down */
-    font-size: 35px;
-    font-family: Courgette;
+    font-size: 25px;
+    font-family: monospace;
     
     
 }
 
 .Showcase-text h1{
-    font-size: 55px;
+    font-size: 35px;
     filter: none;
-    font-family: Courgette;
+    font-family: monospace;
     background-color: crimson;
     display: inline;
     
@@ -77,8 +77,8 @@ body {
 
 .about h1{
     text-align: center;
-    font-size: 35px;
-    font-family: Courgette;
+    font-size: 31px;
+    font-family: monospace;
     z-index: 1;
     background-color: white;
     padding-top: -10%;
@@ -88,6 +88,88 @@ body {
 }
 
 .about p{
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
+    display: block;
     
+}
+
+.Projects {
+    background-color: #840c24;
+    min-height: 400px;
+    
+    overflow: hidden;
+}
+
+.Projects h1{
+    background-color: white;
+    font-family: monospace;
+    font-size: 30px;
+    color: #840c24;
+    text-align: center;
+}
+
+.Skills {
+    background-color: #b01030;
+    min-height: 400px;
+    
+    overflow: hidden;
+}
+
+.Skills h2{
+    background-color: white;
+    font-family: monospace;
+    font-size: 30px;
+    color: #b01030;
+    text-align: center;
+}
+
+
+.Content {
+    background-color: #420612;
+    min-height: 400px;
+    
+    overflow: hidden;
+}
+
+.Content h2{
+    background-color: white;
+    font-family: monospace;
+    font-size: 30px;
+    color: #420612;
+    text-align: center;
+}
+
+
+.Contact {
+    background-color: #840c24;
+    min-height: 400px;
+    
+    overflow: hidden;
+}
+
+.Contact h2{
+    background-color: white;
+    font-family: monospace;
+    font-size: 30px;
+    color: #840c24;
+    text-align: center;
+}
+
+.Contact p{
+
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+        
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    overflow: hidden;
 }
