@@ -2,7 +2,7 @@
 /* Body */ 
 
 body {
-    background-color: white;
+    background-color: black;
     padding: 0px;
     margin: 0px;
     font-family: monospace, 'Times New Roman', Times, serif;
@@ -10,7 +10,7 @@ body {
 }
 
 .showcase {
-    background-image: url('../media/chronis-yan-vaB-Xd0V2zc-unsplash.jpg');
+    background-image: url('../media/animated.gif');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
@@ -19,13 +19,25 @@ body {
     
 }
 
-.navigation{
-    float: left;
+.navigation ul{
+    float: center;
     list-style: none;
-    font-size: 20px;
-    margin-top: 15px;
-	padding:15px;
+    font-size: 20px; 
+    
 }
+
+a {color:white;}         /* Unvisited link  */
+a:visited {color:white;} /* Visited link    */
+a:hover {color:black;}   /* Mouse over link */
+a:active {color:black;}  /* Selected link   */
+
+.navigation li:hover{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    
+}
+
 
 .navigation li{
 
@@ -33,8 +45,23 @@ body {
     background-color: crimson;
     font-family: monospace;
     text-align: center;
-    
+    display: inline-block;
+}
 
+
+button{
+    z-index: 1;
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); /* right, down */
+    font-size: 25px;
+    font-family: monospace;
+    color: crimson;
+    
 }
 
 .Showcase-text {
@@ -62,18 +89,43 @@ body {
     
 }
 
+.Showcase-text h1:hover{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    margin-bottom: 15px;
+
+}
+
 .Showcase-text p{
     background-color: crimson;
     display: inline-block-block;
 }
 
+.Showcase-text p:hover{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    margin-bottom: 15px;
+
+}
+
+
+
+.about:hover{
+    margin: 10px 0px 10px 0px;
+}
+
 .about {
+    border: crimson;
     min-height: 300px;
     color: white;
-    overflow: hidden;
+    margin: 10px 20px 10px 20px;
     background-color: #c61236;
 
 }
+
+
 
 .about h1{
     text-align: center;
@@ -94,11 +146,17 @@ body {
     
 }
 
+
+
 .Projects {
     background-color: #840c24;
     min-height: 400px;
     
-    overflow: hidden;
+    margin: 10px 20px 10px 20px;
+}
+
+.Projects:hover{
+    margin: 10px 0px 10px 0px;
 }
 
 .Projects h1{
@@ -113,7 +171,11 @@ body {
     background-color: #b01030;
     min-height: 400px;
     
-    overflow: hidden;
+    margin: 10px 20px 10px 20px;
+}
+
+.Skills:hover{
+    margin: 10px 0px 10px 0px;
 }
 
 .Skills h2{
@@ -129,7 +191,7 @@ body {
     background-color: #420612;
     min-height: 400px;
     
-    overflow: hidden;
+    margin: 10px 20px 10px 20px;
 }
 
 .Content h2{
@@ -140,12 +202,19 @@ body {
     text-align: center;
 }
 
+.Content:hover{
+    margin: 10px 0px 10px 0px;
+}
 
 .Contact {
     background-color: #840c24;
     min-height: 400px;
     
-    overflow: hidden;
+    margin: 10px 20px 10px 20px;
+}
+
+.Contact:hover{
+    margin: 10px 0px 10px 0px;
 }
 
 .Contact h2{
@@ -173,3 +242,4 @@ footer {
     text-align: center;
     overflow: hidden;
 }
+
