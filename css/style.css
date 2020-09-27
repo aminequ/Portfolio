@@ -10,13 +10,32 @@ body {
 }
 
 .showcase {
-    background-image: url('../media/animated.gif');
+    background-image: url('../media/pankaj-patel-6JVlSdgMacE-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 600px;
     color: white;
     overflow: hidden;
     
+}
+
+button{
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); /* right, down */
+    font-size: 15px;
+    font-family: monospace;
+    background-color: crimson;   
+     
+}
+
+.Letswork a:hover{
+    border-color: rgb(255, 123, 0);
+    border-style: solid;
+    border-width: 5px;
 }
 
 .navigation ul{
@@ -28,11 +47,11 @@ body {
 
 a {color:white;}         /* Unvisited link  */
 a:visited {color:white;} /* Visited link    */
-a:hover {color:black;}   /* Mouse over link */
+a:hover {color:white;}   /* Mouse over link */
 a:active {color:black;}  /* Selected link   */
 
 .navigation li:hover{
-    border-color: black;
+    border-color: rgb(255, 123, 0);
     border-style: solid;
     border-width: 5px;
     
@@ -49,9 +68,7 @@ a:active {color:black;}  /* Selected link   */
 }
 
 
-button{
-    z-index: 1;
-    display: block;
+.Letswork a{
     margin: 0;
     position: absolute;
     top: 70%;
@@ -60,8 +77,13 @@ button{
     transform: translate(-50%, -50%); /* right, down */
     font-size: 25px;
     font-family: monospace;
-    color: crimson;
-    
+    background-color: crimson;    
+}
+
+.Letswork a:hover{
+    border-color: rgb(255, 123, 0);
+    border-style: solid;
+    border-width: 5px;
 }
 
 .Showcase-text {
@@ -90,7 +112,7 @@ button{
 }
 
 .Showcase-text h1:hover{
-    border-color: black;
+    border-color: rgb(255, 123, 0);
     border-style: solid;
     border-width: 5px;
     margin-bottom: 15px;
@@ -103,7 +125,7 @@ button{
 }
 
 .Showcase-text p:hover{
-    border-color: black;
+    border-color: rgb(255, 123, 0);
     border-style: solid;
     border-width: 5px;
     margin-bottom: 15px;
