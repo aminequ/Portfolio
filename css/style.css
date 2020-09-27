@@ -168,12 +168,32 @@ a:active {color:black;}  /* Selected link   */
     
 }
 
+.projects-gallery {
+    margin: 15px;
+    border: 5px solid rgb(255, 123, 0);
+    float: left;
+    width: 180px;
+}
 
+.projects-gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+.projects-gallery desc{
+    padding: 15px;
+    text-align: center;
+    float: center;
+}  
+
+.projects-gallery:hover {
+    border: 1px solid #777;
+}
 
 .Projects {
     background-color: #840c24;
     min-height: 400px;
-    
+    color: white;
     margin: 10px 20px 10px 20px;
 }
 
@@ -212,7 +232,7 @@ a:active {color:black;}  /* Selected link   */
 .Content {
     background-color: #420612;
     min-height: 400px;
-    
+    color: white;
     margin: 10px 20px 10px 20px;
 }
 
