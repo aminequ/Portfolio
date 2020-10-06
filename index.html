@@ -9,35 +9,46 @@
 <body>
     <section>
         <!-- The <div> tag is used as a container for HTML elements-->
-        <div class="showcase">
-            <div class="navigation">
-                <nav>
-                    <ul>
-                        <li><a id="home-page" href="#showcase">Home</a> </li>
-                        <li><a id="about-page" href="#about">About</a> </li>
-                        <li><a id="projects-page" href="#Projects">Projects</a> </li>
-                        <li><a id="skills-page" href="#Skills">Skills</a> </li>
-                        <li><a id="content-page" href="#Content">Content</a> </li>
-                        <li><a id="contact-page" href="#Contact">Contact</a> </li>
-                    </ul>
-                </nav>
-                </div>
+            
+            <div class="showcase">
+                <div id="nav-container">
+                    <div class="bg"></div>
+                    <div class="button" tabindex="0">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </div>
+                    <div id="nav-content" tabindex="0">
+                      <ul>
+                        <li><a href="#0">Home</a></li>
+                        <li><a href="#0">Services</a></li>
+                        <li><a href="#0">Blog</a></li>
+                        <li><a href="#0">About</a></li>
+                        <li><a href="#0">Contact</a></li>
+                        <li class="small"><a href="#0">Facebook</a><a href="#0">Instagram</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 <div class="Showcase-text">
                     <h1>Strive For Thriving</h1>
                     <p>Amine Amhoume: Developer | Security Researcher | Content creator</p>
                 </div>
+                <div class="Letswork">
+                    <a href="#">Let's go</a>
+                </div>
             </div>
-        <div class="Letswork">
-            <a href="#">Let's go</a>
-        </div>
+        
     </section>
     <!-- About -->
     <section>
             <div class="about">
                 <h1>About Me</h1>
                 <p>“Do what you love, and you’ll never work another day in your life”</p>
-                <p>Hey! My name is Amine Amhoume and I am a freelance content writer and penetration tester. </p>
+                <p>Hey! My name is Amine Amhoume and I am a freelance Blogwriter and penetration tester. </p>
                 <p>My career is driven by three reasons which are, the inspiration I mentioned above, my passion for coding, and my ambition for cybersecurity.</p>
+            </div>
+            <div class="rounded-picture-of-me">
+                <img class="picofme" src="/media/picofme.png">
             </div>
     </section>
     <!-- Projects-->
@@ -59,7 +70,7 @@
     <section>
         <div class="Content">
             <!-- To put A bunch of Articles and videos-->
-             <h2>Here's the content I create</h2>
+             <h2>I have a blog, too.</h2>
              <div class="projects-gallery">
                 <a target="_blank" href="https://medium.com/@amhoume/python-for-pentesters-beyond-the-basics-part1-a0adcb89911f">
                     <img src="/media/projects/python-for-pentester.jpeg" alt="python-for-pentester" width="250" height="200">

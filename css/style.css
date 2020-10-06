@@ -1,287 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bebas+Neue&family=Courgette&display=swap');
 /* Body */ 
 
-body {
-    background-color: black;
-    padding: 0px;
+body{
     margin: 0px;
-    font-family: monospace, 'Times New Roman', Times, serif;
-    
 }
+
 
 .showcase {
-    background-image: url('../media/pankaj-patel-6JVlSdgMacE-unsplash.jpg');
-    background-repeat: no-repeat;
+    background-image: url('/media/204990-marrakech-hd.jpg');
+    min-height: 200%;
     background-size: cover;
-    min-height: 600px;
-    color: white;
-    overflow: hidden;
-    
+    -webkit-background-size: cover !important; 
+    -o-background-size: cover; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    line-height: 1.5;  
 }
 
-button{
-    margin: 0;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); /* right, down */
-    font-size: 15px;
-    font-family: monospace;
-    background-color: crimson;   
-     
+.picofme {
+    max-width: 250px;
+    max-height: 250px;
+    border: double;
+    padding: 10px;
+    border-color: white;
+    z-index: 2;
+    bottom: -50px;
+
 }
 
-.Letswork a:hover{
-    border-color: rgb(255, 123, 0);
-    border-style: solid;
-    border-width: 5px;
+.showcase p{
+    font-family: Bebas Neue;
+    font-size: 40px;
+    color:#fff;
+    line-height:0px;
+    text-shadow: 1px 1px 4px #000, 2.5px 2.5px 10px #000;
 }
 
-.navigation ul{
-    float: center;
-    list-style: none;
-    font-size: 20px; 
-    
-}
-
-a {color:white;}         /* Unvisited link  */
-a:visited {color:white;} /* Visited link    */
-a:hover {color:white;}   /* Mouse over link */
-a:active {color:black;}  /* Selected link   */
-
-.navigation li:hover{
-    border-color: rgb(255, 123, 0);
-    border-style: solid;
-    border-width: 5px;
-    
-}
-
-
-.navigation li{
-
-    padding: 0 20px 0 20px;
-    background-color: crimson;
-    font-family: monospace;
+.showcase h1{
+    font-family: Bebas Neue;
     text-align: center;
-    display: inline-block;
-}
-
-
-.Letswork a{
-    margin: 0;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); /* right, down */
-    font-size: 25px;
-    font-family: monospace;
-    background-color: crimson;    
-}
-
-.Letswork a:hover{
-    border-color: rgb(255, 123, 0);
-    border-style: solid;
-    border-width: 5px;
-}
-
-.Showcase-text {
-    z-index: 1;
-    text-align: center;
-    display: block;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%); /* right, down */
-    font-size: 25px;
-    font-family: monospace;
-    
-    
-}
-
-.Showcase-text h1{
-    font-size: 35px;
-    filter: none;
-    font-family: monospace;
-    background-color: crimson;
-    display: inline;
-    
-}
-
-.Showcase-text h1:hover{
-    border-color: rgb(255, 123, 0);
-    border-style: solid;
-    border-width: 5px;
-    margin-bottom: 15px;
+    font-size: 3.5em;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 4px #000, 2.5px 2.5px 10px #000;
 
 }
-
-.Showcase-text p{
-    background-color: crimson;
-    display: inline-block-block;
-}
-
-.Showcase-text p:hover{
-    border-color: rgb(255, 123, 0);
-    border-style: solid;
-    border-width: 5px;
-    margin-bottom: 15px;
-
-}
-
-
-
-.about:hover{
-    margin: 10px 0px 10px 0px;
-}
-
-.about {
-    border: crimson;
-    min-height: 300px;
-    color: white;
-    margin: 10px 20px 10px 20px;
-    background-color: #c61236;
-
-}
-
-
-
-.about h1{
-    text-align: center;
-    font-size: 31px;
-    font-family: monospace;
-    z-index: 1;
-    background-color: white;
-    padding-top: -10%;
-    display: block-inline;
-    color:  #c61236;
-    
-}
-
-.about p{
-    font-size: 25px;
-    text-align: center;
-    display: block;
-    
-}
-
-.projects-gallery {
-    margin: 15px;
-    border: 5px solid rgb(255, 123, 0);
-    float: left;
-    width: 180px;
-}
-
-.projects-gallery img {
-    width: 100%;
-    height: auto;
-  }
-
-.projects-gallery desc{
-    padding: 15px;
-    text-align: center;
-    float: center;
-}  
-
-.projects-gallery:hover {
-    border: 1px solid #777;
-}
-
-.Projects {
-    background-color: #840c24;
-    min-height: 400px;
-    color: white;
-    margin: 10px 20px 10px 20px;
-}
-
-.Projects:hover{
-    margin: 10px 0px 10px 0px;
-}
-
-.Projects h1{
-    background-color: white;
-    font-family: monospace;
-    font-size: 30px;
-    color: #840c24;
-    text-align: center;
-}
-
-.Skills {
-    background-color: #b01030;
-    min-height: 400px;
-    
-    margin: 10px 20px 10px 20px;
-}
-
-.Skills:hover{
-    margin: 10px 0px 10px 0px;
-}
-
-.Skills h2{
-    background-color: white;
-    font-family: monospace;
-    font-size: 30px;
-    color: #b01030;
-    text-align: center;
-}
-
-
-.Content {
-    background-color: #420612;
-    min-height: 400px;
-    color: white;
-    margin: 10px 20px 10px 20px;
-}
-
-.Content h2{
-    background-color: white;
-    font-family: monospace;
-    font-size: 30px;
-    color: #420612;
-    text-align: center;
-}
-
-.Content:hover{
-    margin: 10px 0px 10px 0px;
-}
-
-.Contact {
-    background-color: #840c24;
-    min-height: 400px;
-    
-    margin: 10px 20px 10px 20px;
-}
-
-.Contact:hover{
-    margin: 10px 0px 10px 0px;
-}
-
-.Contact h2{
-    background-color: white;
-    font-family: monospace;
-    font-size: 30px;
-    color: #840c24;
-    text-align: center;
-}
-
-.Contact p{
-
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    display: block;
-        
-}
-
-footer {
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    font-family: monospace;
-    text-align: center;
-    overflow: hidden;
-}
-
