@@ -8,7 +8,7 @@ body{
 
 .showcase {
     background-image: url('/media/204990-marrakech-hd.jpg');
-    min-height: 200%;
+    min-height: 500px;
     background-size: cover;
     -webkit-background-size: cover !important; 
     -o-background-size: cover; 
@@ -29,8 +29,6 @@ body{
     border: double;
     padding: 10px;
     border-color: white;
-    z-index: 2;
-    bottom: -50px;
 
 }
 
@@ -40,7 +38,9 @@ body{
     color:#fff;
     line-height:0px;
     text-shadow: 1px 1px 4px #000, 2.5px 2.5px 10px #000;
+    
 }
+
 
 .showcase h1{
     font-family: Bebas Neue;
@@ -49,4 +49,44 @@ body{
     color: rgba(255, 255, 255, 1);
     text-shadow: 1px 1px 4px #000, 2.5px 2.5px 10px #000;
 
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: red;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
