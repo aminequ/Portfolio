@@ -7,8 +7,8 @@ body{
 
 
 .showcase {
-    background-image: url('/media/204990-marrakech-hd.jpg');
-    min-height: 500px;
+    background-image: url('/media/Screenshot\ from\ 2020-10-08\ 00-09-02.png');
+    min-height: 550px;
     background-size: cover;
     -webkit-background-size: cover !important; 
     -o-background-size: cover; 
@@ -23,6 +23,28 @@ body{
     line-height: 1.5;  
 }
 
+.Letswork {
+    background-color: white;
+    border: none;
+    color: rgb(85, 184, 250)ack;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Bebas Neue;
+    margin: 4px 2px;
+    transition: 0.3s;
+}
+  
+.Letswork:hover {
+    background-color: rgb(85, 184, 250);
+    color: white;
+    border-style: double;
+    border-color: white;
+}
+
+.Letswork a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
 .picofme {
     max-width: 250px;
     max-height: 250px;
