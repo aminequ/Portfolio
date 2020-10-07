@@ -38,12 +38,23 @@ button{
     border-width: 5px;
 }
 
+
+.navigation{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 10px; 
+
+}
 .navigation ul{
     float: center;
     list-style: none;
     font-size: 20px; 
     
 }
+
+
 
 a {color:white;}         /* Unvisited link  */
 a:visited {color:white;} /* Visited link    */
