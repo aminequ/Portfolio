@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Amine Amhoume</title>
+</head>
+<body>
+
+
+    <section>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <!-- Use any element to open the sidenav -->          
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+          <div id="main">
+          </div>
+          <span id="troi-bands" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <script>
+              /* Set the width of the side navigation to 250px */
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+          </script>
+        <!-- The <div> tag is used as a container for HTML elements-->
+        <div class="showcase">
+           
+            <div class="Showcase-text">
+                    <h1>Strive For Thriving</h1>
+                    <p>Amine Amhoume</p>
+                    <p>Developer | Security Researcher | Content creator</p>
+                </div>
+                <div class="Letswork">
+                    <a href="#">Let's go</a>
+                </div>
+            </div>
+        
+    </section>
+    <!-- About -->
+    <section>
+            <div class="about">
+                <h1>About Me</h1>
+                <p>“Do what you love, and you’ll never work another day in your life”</p>
+                <p>Hey! My name is Amine Amhoume and I am a freelance Blogwriter and penetration tester. </p>
+                <p>My career is driven by three reasons which are, the inspiration I mentioned above, my passion for coding, and my ambition for cybersecurity.</p>
+            </div>
+            <div class="rounded-picture-of-me">
+                <img class="picofme" src="/media/picofme.png">
+            </div>
+    </section>
+    <!-- Projects-->
+    <section>
+        <div class="Projects">
+            <h1>Here Are Some Of My Projects</h1>
+    </div>
+    </section>
+
+    <!-- SKILLS-->
+    <section>
+        <div class="Skills">
+            <h2>My honest Skills</h2>
+            <div class="skills-boxs">
+                <!-- To put skill boxes here-->
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="Content">
+            <!-- To put A bunch of Articles and videos-->
+             <h2>I have a blog, too.</h2>
+             <div class="projects-gallery">
+                <a target="_blank" href="https://medium.com/@amhoume/python-for-pentesters-beyond-the-basics-part1-a0adcb89911f">
+                    <img src="/media/projects/python-for-pentester.jpeg" alt="python-for-pentester" width="250" height="200">
+                </a>
+                <div class="desc">Learn Python for penteste | part 1</div>  
+    
+                
+            </div>
+            <div class="projects-gallery">      
+                  <a target="_blank" href="https://medium.com/@amhoume/reverse-engineering-it-was-all-a-dream-c10db07e0979">
+                    <img src="media/projects/Reverse.jpeg" alt="Learn reverse engineering" width="300" height="200">
+                  </a>
+                  <div class="desc">Learn Reverse engineering </div>
+                </div>
+            <div class="projects-gallery">            
+                  <a target="_blank" href="https://medium.com/analytics-vidhya/will-you-stop-fearing-vim-or-not-cb00088dc270">
+                    <img src="/media/projects/Vim.jpeg" alt="Learn to use Vim" width="250" height="200">
+                  </a>
+                  <div class="desc">Learn Vim </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section>
+        <div class="Contact">
+            <h2>Contact Me</h2>
+            <p>You've met me, you now know what I do and it's time to meet you too</p>
+        </div>
+    </section>
+    <footer>
+        <p>Amine Amhoume &copy; 2020</p>
+        <p><a href="#">Privacy Policy</a></p>
+    </footer>
+    
+</body>
+</html>
