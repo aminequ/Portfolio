@@ -44,7 +44,8 @@ body{
 
 .Letswork a, a:visited, a:hover, a:active {
     color: inherit;
-  }
+}
+
 .picofme {
     max-width: 250px;
     max-height: 250px;
@@ -142,3 +143,83 @@ body{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+
+/* About me starts here */
+
+.About{
+    background-color: teal;
+    height: auto;
+    width: auto;
+    overflow-x: hidden;
+}
+
+#ct{
+    height:150px; 
+    background-color: white;
+    width:370px;
+    border:1px solid lightseagreen;
+    margin: 100px auto;
+    text-align: center;
+    position:relative;
+    color:teal;
+    padding:15px;
+
+}
+
+#about-span{
+    background-color: white;
+    margin: 15px 43%; ;
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Bebas Neue;
+    color: teal;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    
+}
+
+#about-span:hover{
+    border: double ;
+    border-color: white;
+    background-color: inherit;
+    color: white;
+}
+.corner{height:30px;
+  width:30px;
+  border-radius:50%;
+  border:1px solid white;
+  transform:rotate(-45deg);  
+  position:absolute;
+  background: teal;
+}
+
+#left_top{
+  top:-16px;
+  left:-16px;
+  border-color:transparent transparent lightseagreen transparent;
+}
+#right_top{
+  top:-16px;
+  right:-16px;
+  border-color:transparent transparent transparent teal;
+}
+#left_bottom{
+  bottom:-16px;
+  left:-16px;
+  border-color:transparent teal transparent transparent ;
+}
+
+#right_bottom{
+  bottom:-16px;
+  right:-16px;
+  border-color:lightseagreen transparent transparent transparent;
+}
+
+#about-p{padding-top:13px;font-size:18px;color: black;}
+
+
