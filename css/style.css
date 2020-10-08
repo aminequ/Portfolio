@@ -223,3 +223,17 @@ body{
 #about-p{padding-top:13px;font-size:18px;color: black;}
 
 
+.Projects{
+    background-color: lightblue;
+    height: 500px;
+    width: auto;
+    overflow-x: hidden;
+
+}
+
+#Whatissecurity{
+    max-width: 90px;
+    max-height: 90px;
+    position: absolute;
+
+}
