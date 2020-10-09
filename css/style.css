@@ -225,15 +225,53 @@ body{
 
 .Projects{
     background-color: lightblue;
-    height: 500px;
+    height: auto;
     width: auto;
     overflow-x: hidden;
-
+    margin-top: 0;
 }
 
 #Whatissecurity{
-    max-width: 90px;
-    max-height: 90px;
-    position: absolute;
+    max-width: 250;
+    max-height: 250;
+    border: double;
+    border-color: white;
+    margin: 15px;
+    display: inline-block;
+}
 
+.Projects img{
+    max-width: 200px;
+    max-height: 200px;
+    padding: 5px;
+}
+
+.Projects p{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: auto;
+    background-color: white;
+}
+
+.Projects h1{
+    background-color: white;
+    margin: 15px 43%; ;
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Bebas Neue;
+    color: lightskyblue;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+}
+
+.Projects h1:hover{
+    border: double ;
+    border-color: white;
+    background-color: inherit;
+    color: white;
+}
 }
