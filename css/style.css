@@ -3,6 +3,7 @@
 
 body{
     margin: 0px;
+    font-family: monospace;
 }
 
 
@@ -227,8 +228,8 @@ body{
     background-color: lightblue;
     height: auto;
     width: auto;
-    overflow-x: hidden;
-    margin-top: 0;
+    overflow-y: hidden;
+    
 }
 
 #Whatissecurity{
@@ -280,9 +281,9 @@ body{
 
 .Skills{
     background-color: lightskyblue;
-    height: auto;
-    overflow-x: hidden;
-    margin-top: 0;
+    height: 310px;
+    overflow-x: visible;
+    margin-top: -15px;
 }
 
 .Skills h1{
@@ -324,6 +325,27 @@ body{
     height: 100%;
     background-color: rgb(173, 245, 255);
     z-index: 1;
+}
+
+.Skills h2{
+    background-color: white;
+    margin: 15px 43%; ;
+    padding: 9px 25px 9px 25px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Bebas Neue;
+    color: lightskyblue;
+    transition: 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    left: 50%;
+}
+
+.Skills h2:hover{
+    border: double ;
+    border-color: white;
+    background-color: inherit;
+    color: white;
 }
 
 .split-right img{
