@@ -161,10 +161,8 @@ body{
     width:370px;
     border:1px solid lightseagreen;
     margin: 100px auto;
-    text-align: center;
     position:relative;
     color:teal;
-    padding:15px;
 
 }
 
@@ -221,7 +219,12 @@ body{
   border-color:lightseagreen transparent transparent transparent;
 }
 
-#about-p{padding-top:13px;font-size:18px;color: black;}
+#about-p{
+  font-size:18px;
+  color: black;
+  font-family: Courgette;
+  text-align: center;
+}
 
 
 .Projects{
@@ -252,11 +255,12 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: auto;
     background-color: white;
+  
 }
 
 .Projects h1{
     
-    /*
+  
     background-color: white;
     margin: 15px 43%; ;
     padding: 15px 40px 15px 40px;
@@ -269,7 +273,7 @@ body{
     align-items: center;
     justify-content: center;
     left: 50%;
-    */
+    
 }
 
 .Projects h1:hover{
@@ -282,8 +286,8 @@ body{
 .Skills{
     background-color: lightskyblue;
     height: 310px;
-    overflow-x: visible;
-    margin-top: -15px;
+    overflow-x: hidden;
+    
 }
 
 .Skills h1{
@@ -359,4 +363,216 @@ body{
     width: 96px;
     height: 96px;
 
+}
+
+.blog h1{
+    background-color: white;
+    margin: 15px 43%; ;
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    font-size: 22px;
+    font-family: Bebas Neue;
+    color: lightskyblue;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+}
+
+.slideshow-container h1:hover{
+    border: double ;
+    border-color: white;
+    background-color: inherit;
+    color: white;
+}
+
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+.slideshow-container img{vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* here starts contact form */ 
+
+.Contact{
+   height: auto;
+   background-color: rgb(70, 180, 180);
+
+}
+
+.Contact h2{
+  background-color: white;
+  margin: 15px 43%; ;
+  padding: 15px 40px 15px 40px;
+  text-align: center;
+  font-size: 22px;
+  font-family: Bebas Neue;
+  color: lightskyblue;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  
+}
+
+.Contact h2:hover{
+  border: double ;
+  border-color: white;
+  background-color: inherit;
+  color: white;
+}
+
+.Contact p{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.Contact form{
+  background-color: teal;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+  
+}
+
+input[type=text] {
+  width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
+input[type=email] {
+  width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: wheat;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit]:hover {
+  background-color: whitesmoke;
+}
+
+footer {
+  background-color: lightseagreen;
+  text-align: center;
+  font-size: 15px;
+  height: auto;
+  font-weight: bold;
+  overflow: hidden;
 }

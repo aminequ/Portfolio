@@ -153,30 +153,66 @@
         </div> 
     </section>
     <section>
-        <div class="Content">
-            <!-- To put A bunch of Articles and videos-->
-             <h2>I have a blog, too.</h2>
-             <div class="projects-gallery">
-                <a target="_blank" href="https://medium.com/@amhoume/python-for-pentesters-beyond-the-basics-part1-a0adcb89911f">
-                    <img src="/media/projects/python-for-pentester.jpeg" alt="python-for-pentester" width="250" height="200">
-                </a>
-                <div class="desc">Learn Python for penteste | part 1</div>  
-    
-                
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="/media/projects/python-for-pentester.jpeg" style="width:100%">
+              <div class="text">Caption Text</div>
             </div>
-            <div class="projects-gallery">      
-                  <a target="_blank" href="https://medium.com/@amhoume/reverse-engineering-it-was-all-a-dream-c10db07e0979">
-                    <img src="media/projects/Reverse.jpeg" alt="Learn reverse engineering" width="300" height="200">
-                  </a>
-                  <div class="desc">Learn Reverse engineering </div>
-                </div>
-            <div class="projects-gallery">            
-                  <a target="_blank" href="https://medium.com/analytics-vidhya/will-you-stop-fearing-vim-or-not-cb00088dc270">
-                    <img src="/media/projects/Vim.jpeg" alt="Learn to use Vim" width="250" height="200">
-                  </a>
-                  <div class="desc">Learn Vim </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="/media/projects/Reverse.jpeg" style="width:100%">
+              <div class="text">Caption Two</div>
             </div>
-        </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="/media/projects/Vim.jpeg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
     </section>
 
     <!--Contact-->
@@ -184,7 +220,18 @@
         <div class="Contact">
             <h2>Contact Me</h2>
             <p>You've met me, you now know what I do and it's time to meet you too</p>
-        </div>
+        
+            <form action="#">
+                <label for="fname"> First name</label><br>
+                <input type="text" id="fname" name="fname" value="Amine"><br>
+                <label for="lname"> Last Name</label><br>
+                <input type="text" id="lname" name="lname" value="Amhoume"><br><br>
+                <label for="Email">Email Address </label><br>
+                <input type="email" id="femail" name="femail" value="example@domain.com"><br><br>
+                <input type="text" id="fmessage" name="fmessage" value="Your message here"><br><br>
+                <input type="submit" value="Submit"><br>
+            </form>
+        </div>    
     </section>
     <footer>
         <p>Amine Amhoume &copy; 2020</p>
