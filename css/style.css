@@ -47,14 +47,6 @@ body{
     color: inherit;
 }
 
-.picofme {
-    max-width: 250px;
-    max-height: 250px;
-    border: double;
-    padding: 10px;
-    border-color: white;
-
-}
 
 .showcase p{
     font-family: Bebas Neue;
@@ -149,22 +141,12 @@ body{
 /* About me starts here */
 
 .About{
-    background-color: teal;
+    background-color: rgb(0, 153, 153);
     height: auto;
     width: auto;
     overflow-x: hidden;
 }
 
-#ct{
-    height:150px; 
-    background-color: white;
-    width:370px;
-    border:1px solid lightseagreen;
-    margin: 100px auto;
-    position:relative;
-    color:teal;
-
-}
 
 #about-span{
     background-color: white;
@@ -188,42 +170,26 @@ body{
     background-color: inherit;
     color: white;
 }
-.corner{height:30px;
-  width:30px;
-  border-radius:50%;
-  border:1px solid white;
-  transform:rotate(-45deg);  
-  position:absolute;
-  background: teal;
+
+.Center-element{
+  margin: 40px 20% 15px 20%;
+  background-color: white;
+  color: #000;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-#left_top{
-  top:-16px;
-  left:-16px;
-  border-color:transparent transparent lightseagreen transparent;
-}
-#right_top{
-  top:-16px;
-  right:-16px;
-  border-color:transparent transparent transparent teal;
-}
-#left_bottom{
-  bottom:-16px;
-  left:-16px;
-  border-color:transparent teal transparent transparent ;
+.Center-element img{
+  max-width: 350px;
+  max-height: auto;
+  margin: 0;
+
 }
 
-#right_bottom{
-  bottom:-16px;
-  right:-16px;
-  border-color:lightseagreen transparent transparent transparent;
-}
-
-#about-p{
+.Center-element p{
   font-size:18px;
-  color: black;
-  font-family: Courgette;
-  text-align: center;
+  color: black; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -232,6 +198,13 @@ body{
     height: auto;
     width: auto;
     overflow-y: hidden;
+    display: flex;
+    
+    /* Put a card in the next row when previous cards take all width */
+    
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
     
 }
 
@@ -240,14 +213,18 @@ body{
     max-height: 250;
     border: double;
     border-color: white;
-    margin: 15px;
-    display: inline-block;
+    flex-basis: 25%;
+    margin: 0 0 20px 20px;    
+    padding-left: 8px;
+    padding-right: 8px;
+    
 }
 
 .Projects img{
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 400px;
+    max-height: 400px;
     padding: 5px;
+    object-fit: cover;
 }
 
 .Projects p{
