@@ -176,7 +176,7 @@ body{
   background-color: white;
   color: #000;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: auto auto;
 }
 
 .Center-element img{
@@ -190,6 +190,7 @@ body{
   font-size:18px;
   color: black; 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
 }
 
 
@@ -260,14 +261,12 @@ body{
     color: white;
 }
 
-.Skills{
-    background-color: lightskyblue;
-    height: 310px;
-    overflow-x: hidden;
-    
+.honest{
+  background-color: cadetblue;
+  overflow-x: hidden;
 }
 
-.Skills h1{
+.honest h2{
     background-color: white;
     margin: 15px 43%; ;
     padding: 15px 40px 15px 40px;
@@ -283,57 +282,22 @@ body{
     
 }
 
-.Skills h1:hover{
+.honest h2:hover{
     border: double ;
     border-color: white;
     background-color: inherit;
     color: white;
 }
 
-.split-left{
-    position: relative;
-    width: 50%;
-    float: left;
-    height: 100%;
-    background-color: rgb(52, 147, 255);
-    z-index: 1;
+.Skills{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: aquamarine;
+  min-height: 310px;
 }
 
-.split-right{
-    position: relative;
-    width: 50%;
-    float: left;
-    height: 100%;
-    background-color: rgb(173, 245, 255);
-    z-index: 1;
-}
-
-.Skills h2{
-    background-color: white;
-    margin: 15px 43%; ;
-    padding: 9px 25px 9px 25px;
-    text-align: center;
-    font-size: 22px;
-    font-family: Bebas Neue;
-    color: lightskyblue;
-    transition: 0.3s;
-    display: inline-flex;
-    justify-content: center;
-    left: 50%;
-}
-
-.Skills h2:hover{
-    border: double ;
-    border-color: white;
-    background-color: inherit;
-    color: white;
-}
-
-.split-right img{
-    width: 150px;
-    height: 150px;
-    padding: 15px;
-    justify-content: space-between;
+.Skills #left{
+  background-color: rgb(247, 131, 131);
 }
 
 .Skills img{
@@ -342,7 +306,7 @@ body{
 
 }
 
-.blog h1{
+.blog h2{
     background-color: white;
     margin: 15px 43%; ;
     padding: 15px 40px 15px 40px;
@@ -355,6 +319,19 @@ body{
     align-items: center;
     justify-content: center;
     left: 50%;
+    z-index: 10;
+}
+
+.blog{
+  background-color: cadetblue;
+  overflow-x: hidden;
+}
+
+.blog h2:hover{
+  border: double ;
+  border-color: white;
+  background-color: inherit;
+  color: white;
 }
 
 .slideshow-container h1:hover{
@@ -374,6 +351,7 @@ body{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  
 }
 
 /* Next & previous buttons */
